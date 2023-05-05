@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">Enter your email here:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+      <br>
+      <br>
+      <label for="password">Enter your password here:</label>
+      <input type="password" id="password" name="password" required placeholder="Enter your password">
+      <br>
+      <br>
+      <label for="name">Enter your name here:</label>
+      <input type="text" id="name" name="name" required pattern="[A-Za-z]+" 
+      minlength="2" maxlength="20" placeholder="Enter your name">
+      <br>
+      <br>
+      <label for="surname">Enter your surname here:</label>
+      <input type="text" id="surname" name="surname" required pattern="[A-Za-z]+" 
+      minlength="2" maxlength="20" placeholder="Enter your surname">
+      <br>
+      <br>
+      <label for="birth">Enter your date of birth:</label>
+      <input type="date" id="birth" name="birth" required>
+      <br>
+      <br>
+      <label for="telnumb">Enter your telephone number:</label>
+      <input type="text" id="telnumb" name="telnumb" pattern="[0-9]+" required placeholder="Enter your tel number">
+      <br>
+      <br>
+      <label for="plan">Choose your plan:</label>
+      <select id="plan" name="plan">
+        <option>choose one</option>
+        <option>Free plan 0$</option>
+        <option>Basic plan 10$</option>
+        <option>Medium plan 15$</option>
+        <option>High plan 20$</option>
+      </select>
+      <br>
+      <br>
+      <label for="Proplan">Check for the pro Plan 30$</label>
+      <input type="checkbox" id="Proplan" name="Proplan" value="choose Pro">
+      <br>
+      <br>
+      <label for="creditCard">Enter your Credit card number:</label>
+      <input type="text" id="creditCard" name="creditCard" required pattern="[0-9]{16}" placeholder="Enter your card number">
+      <br>
+      <br>
+      <label for="cvc">Enter your cvc:</label>
+      <input type="text" id="cvc" name="cvc" required maxlength="3" pattern="[0-9]+" placeholder="Enter your cvc" >
+      <br>
+      <br>
+      <label for="expdate">Enter the expiration date :</label>
+      <input type="date" id="expdate" name="expdate" required>
+      <br>
+      <br>
+      <label for="address">Enter the billing address :</label>
+      <input type="address" id="address" name="address" required placeholder="Enter your address">
+      <br>
+      <br>
+      <button>Invia</button>
+    </form>
+  </body>
+</html>
