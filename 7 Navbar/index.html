@@ -8,20 +8,30 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Navbar</title>
-    
   </head>
   <body>
+    
     <navbar>
-        <p><b>Navbar</b><p>
-        <a href="https//google.com">Home</a>
-        <a href="https//google.com">link</a>
-        <label for="dropdown"></label>
-        <select id="dropdown" name="dropdown">
-            <option>Dropdown</option>
-            <option>Dropdown</option>
-        </select>
-        <a href="#">Disabled</a>
-        <input type="text" placeholder="Search..">
-        <button>Search</button>
+      <div class="navbar">
+        <a href="#"><b>Navbar</b></a>
+      </div>
+      <ul>
+        <li><a href="https//google.com">Home</a></li>
+        <li><a href="https//google.com">link</a></li>
+      </ul>
+      <div class="dropdown">
+        <a href="#">Dropdown</a>
+        <ul>
+          <li><a href="#">Drop1</a></li>
+          <li><a href="#">Drop2</a></li>
+        </ul>
+      </div>
+      <a href="">Disabled</a>
+      <button disabled>Disabled</button>
+      <br>
+      <br>
+      <div><input type="search" placeholder="Search..." id="searchbar" />
+      <button id="searchbar">Search</button></div>
     </navbar>
   </body>
+</html>
